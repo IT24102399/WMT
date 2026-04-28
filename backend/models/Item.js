@@ -22,6 +22,13 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Description is required"],
       trim: true,
     },
+
+    WarrantyPeriod: {
+      type: Number,
+      required: [true, "WarrantyPeriod is required"],
+      min: [0, "WarrantyPeriod cannot be negative"],
+    },
+
     imageUrl: {
       type: String,
       default: "",
