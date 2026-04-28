@@ -43,20 +43,22 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
         required
       />
 
-       <label>WarrantyPeriod</label>
-      <input
-        type="number"
-        name="WarrantyPeriod"
-        value={formData.WarrantyPeriod}
-        onChange={handleChange}
-        required
-      />
+ 
 
       <label>Description</label>
       <textarea
         name="description"
         rows="4"
         value={formData.description}
+        onChange={handleChange}
+        required
+      />
+
+<label>WarrantyPeriod</label>
+      <textarea
+        name="WarrantyPeriod"
+        rows="4"
+        value={formData.WarrantyPeriod}
         onChange={handleChange}
         required
       />
